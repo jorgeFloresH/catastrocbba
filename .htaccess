@@ -1,0 +1,15 @@
+# Use PHPBETA Single php.ini as default
+AddHandler application/x-httpd-phpbetas .php
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html#$1 [L]
+# File modified on Tue May 31 06:50:48 2016 by server
+# For security reasons, mod_php is not used on this server. Use a php.ini file for php directives
+# php_value max_input_vars 6000
+# For security reasons, mod_php is not used on this server. Use a php.ini file for php directives
+# php_value suhosin.get.max_vars 6000
+# For security reasons, mod_php is not used on this server. Use a php.ini file for php directives
+# php_value suhosin.post.max_vars 6000
+# For security reasons, mod_php is not used on this server. Use a php.ini file for php directives
+# php_value suhosin.request.max_vars 6000
